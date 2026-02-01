@@ -1,0 +1,43 @@
+/* ===== GLOBAL FIX FOR RIGHT SPACE ISSUE ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent flex/grid children from overflowing */
+div {
+  min-width: 0;
+}
+
+/* Media elements safety */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header,
+.second-nav,
+.footer {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .second-nav {
+    overflow-x: hidden;
+    flex-wrap: wrap;
+  }
+}
+

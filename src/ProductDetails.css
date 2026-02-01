@@ -1,0 +1,186 @@
+/* ROOT WRAPPER */
+.pd-root {
+  width: 100%;
+  background: #ffffff;
+  min-height: 100vh;
+  padding-bottom: 40px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* BACK BUTTON */
+.pd-top {
+  width: 100%;
+  padding: 20px;
+}
+
+.pd-back {
+  font-size: 16px;
+  background: none;
+  border: none;
+  color: #0b7d3a; /* Pothys Green */
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* MAIN CONTENT BOX */
+.pd-wrap {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.06);
+}
+
+/* LEFT SIDE (IMAGES) */
+.pd-left {
+  flex: 1.1;
+}
+
+/* MAIN IMAGE */
+.pd-slider {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  border: 1px solid #dadada;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f8f8f8;
+}
+
+.pd-main-img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+/* SLIDER BUTTONS */
+.pd-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #0b7d3a;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+}
+
+.pd-prev {
+  left: 10px;
+}
+
+.pd-next {
+  right: 10px;
+}
+
+/* THUMBNAIL ROW */
+.pd-thumb-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.pd-thumb {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.pd-thumb.active {
+  border-color: #0b7d3a; /* Pothys Green */
+}
+
+/* RIGHT SIDE (INFO) */
+.pd-right {
+  flex: 1;
+  padding-left: 10px;
+}
+
+/* PRODUCT NAME */
+.pd-name {
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* PRICE */
+.pd-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0b7d3a;
+  margin-bottom: 20px;
+}
+
+/* SIZE SELECT */
+.pd-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.pd-select {
+  width: 200px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #c4c4c4;
+  font-size: 15px;
+  background: #fff;
+}
+
+BUTTONS
+.pd-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pd-add,
+.pd-buy {
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+/* Green button */
+.pd-add {
+  background: #0b7d3a;
+  color: white;
+}
+
+/* Golden button */
+ .pd-buy {
+  background: #d8a23f;
+  color: #fff;
+} 
+
+/* DESCRIPTION */
+.pd-desc {
+  margin-top: 25px;
+}
+
+.pd-desc h3 {
+  font-size: 18px;
+  color: #0b7d3a;
+  margin-bottom: 10px;
+}
+
+.pd-desc p {
+  line-height: 1.5;
+  color: #444;
+}
